@@ -66,13 +66,23 @@ buck-out/
 .vscode
 
 # Expo
-.expo/*
+.expo/
+*.expo.*
 bin/Exponent.app
 /android
 /ios
 expo-env.d.ts
 
+# Metro
+.metro-health-check*
+
+# TypeScript
+*.tsbuildinfo
+
 ## Secrets
+.env
+.env.*
+!.env.example
 npm-debug.*
 *.jks
 *.p8
@@ -80,6 +90,7 @@ npm-debug.*
 *.key
 *.mobileprovision
 *.orig.*
+*.pem
 web-build/
 
 # Configurations
