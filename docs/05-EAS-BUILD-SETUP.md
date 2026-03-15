@@ -12,7 +12,9 @@ How to set up EAS (Expo Application Services) so the app can be built in the clo
 
 ---
 
-## First-time EAS setup (one-time per machine / project)
+## First-time EAS setup (one-time per project) — required for CI
+
+**Important:** CI runs `eas build` in non-interactive mode. You must run **`npx eas init`** locally once (while logged in) so EAS links the app to an Expo project and adds `projectId` to your config. Commit and push that change. Otherwise CI fails with **"EAS project not configured"**.
 
 1. **Log in**
    ```bash
